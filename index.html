@@ -1,16 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-<title>GSUI5051</title>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>index-temp</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -71,7 +67,7 @@ div.hr:focus { cursor: none; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
 .md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
@@ -96,6 +92,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -137,18 +134,9 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none 0s ease 0s; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
@@ -159,14 +147,58 @@ iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
 @media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
 .md-diagram-panel .start-state { fill: var(--node-fill); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
 
 
 :root {
@@ -182,10 +214,11 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
     /* open-sans-700italic - latin-ext_latin */
   html {
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
@@ -354,7 +387,7 @@ table {
     word-break: initial;
 }
 table tr {
-    border-top: 1px solid #dfe2e5;
+    border: 1px solid #dfe2e5;
     margin: 0;
     padding: 0;
 }
@@ -528,9 +561,9 @@ header, .context-menu, .megamenu-content, footer{
     color: #b4654d;
 }
 
-.html-for-mac .context-menu {
+/*.html-for-mac {
     --item-hover-bg-color: #E6F0FE;
-}
+}*/
 
 #md-notification .btn {
     border: 0;
@@ -538,6 +571,7 @@ header, .context-menu, .megamenu-content, footer{
 
 .dropdown-menu .divider {
     border-color: #e5e5e5;
+    opacity: 0.4;
 }
 
 .ty-preferences .window-content {
@@ -549,10 +583,16 @@ header, .context-menu, .megamenu-content, footer{
     background: #999;
 }
 
- :root {--mermaid-font-zoom:1.25em ;} 
-</style>
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style><title>GSUI5051</title>
 </head>
-<body class='typora-export os-windows'>
-<div id='write'  class=''><p><a href='https://gsui5051.github.io/'><span>English</span></a><span> | </span><a href='https://gsui5051.gitee.io/'><span>中文</span></a></p><h1><a name="gsui5051" class="md-header-anchor"></a><span>GSUI5051</span></h1><p><span>I translate incremental games.</span></p><h1><a name="translated-games" class="md-header-anchor"></a><span>Translated Games</span></h1><h3><a name="antimatter-dimensions反物质维度）" class="md-header-anchor"></a><span>Antimatter Dimensions（反物质维度）</span></h3><p><span>Google Play: </span><a href='https://play.google.com/store/apps/details?id=kajfosz.antimatterdimensions&amp;hl=en_US&amp;gl=US'><span>https://play.google.com/store/apps/details?id=kajfosz.antimatterdimensions&amp;hl=en_US&amp;gl=US</span></a></p><p><span>Guide: </span><a href='https://antimatter-dimensions.fandom.com/wiki/Guide'><span>https://antimatter-dimensions.fandom.com/wiki/Guide</span></a></p><h3><a name="true-exponential真·指数）" class="md-header-anchor"></a><span>True Exponential（真·指数）</span></h3><p><span>Link：</span><a href='https://angarg12.github.io/TrueExponential/'><span>https://angarg12.github.io/TrueExponential/</span></a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/TrueExponential-zhCN/'><span>https://gsui5051.github.io/TrueExponential-zhCN/</span></a></p><p><span>Chinese Version Link 2：</span><a href='http://likexia.gitee.io/trueexponential/'><span>http://likexia.gitee.io/trueexponential/</span></a></p><h3><a name="tower-of-insanity狂人之塔）" class="md-header-anchor"></a><span>Tower of Insanity（狂人之塔）</span></h3><p><span>Link：</span><a href='https://gsui5051.github.io/Tower-of-Insanity-zhCN/index-en.html'><span>https://gsui5051.github.io/Tower-of-Insanity-zhCN/index-en.html</span></a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/Tower-of-Insanity-zhCN/index.html'><span>https://gsui5051.github.io/Tower-of-Insanity-zhCN/index.html</span></a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/tower-of-insanity-zhcn/'><span>https://gsui5051.gitee.io/tower-of-insanity-zhcn/</span></a></p><h3><a name="1g∞u-一个工厂无限升级）" class="md-header-anchor"></a><span>1G∞U （一个工厂，无限升级）</span></h3><p><span>Link：</span><a href='https://naruyoko.github.io/one-generator--infinite-upgrades/'><span>https://naruyoko.github.io/one-generator--infinite-upgrades/</span></a></p><p><span>Chinese Version：</span><a href=' https://gsui5051.github.io/one-generator--infinite-upgrades-zhCN/'><span> https://gsui5051.github.io/one-generator--infinite-upgrades-zhCN/</span></a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/one-generator--infinite-upgrades-zhcn/'><span>https://gsui5051.gitee.io/one-generator--infinite-upgrades-zhcn/</span></a></p><h3><a name="beancremental豆增量）" class="md-header-anchor"></a><span>Beancremental（豆增量）</span></h3><p><span>Link：</span><a href='https://gsui5051.github.io/Bean-Incremental/index.html' target='_blank' class='url'>https://gsui5051.github.io/Bean-Incremental/index.html</a></p><p><span>Link 2：</span><a href='https://gsui5051.gitee.io/bean-incremental/index.html' target='_blank' class='url'>https://gsui5051.gitee.io/bean-incremental/index.html</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/Bean-Incremental/index-zh.html' target='_blank' class='url'>https://gsui5051.github.io/Bean-Incremental/index-zh.html</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/bean-incremental/index-zh.html' target='_blank' class='url'>https://gsui5051.gitee.io/bean-incremental/index-zh.html</a></p><h3><a name="incrementreeverse增量树宇宙）" class="md-header-anchor"></a><span>Incrementreeverse（增量树宇宙）</span></h3><p><span>Link：</span><a href='http://raw.githack.com/pg132/The-Modding-Tree/master/index.html' target='_blank' class='url'>http://raw.githack.com/pg132/The-Modding-Tree/master/index.html</a></p><p><span>Link 2：</span><a href='https://gsui5051.gitee.io/incrementreeverse/' target='_blank' class='url'>https://gsui5051.gitee.io/incrementreeverse/</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/Incrementreeverse-CN/' target='_blank' class='url'>https://gsui5051.github.io/Incrementreeverse-CN/</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/incrementreeverse-cn' target='_blank' class='url'>https://gsui5051.gitee.io/incrementreeverse-cn</a></p><h1><a name="social-networks" class="md-header-anchor"></a><span>Social Networks</span></h1><p><a href='https://space.bilibili.com/21982610'><span>Bilibili</span></a><span> | </span><a href='https://weibo.com/2549694844/'><span>Weibo</span></a><span> | </span><a href='https://www.zhihu.com/people/gsui5051'><span>Zhihu</span></a><span> | </span><a href='https://steamcommunity.com/profiles/76561198300638655/'><span>Steam</span></a><span> | </span><a href='https://www.youtube.com/channel/UC4cyKyRuRgKfpgyqGNE1MEw'><span>YouTube</span></a><span> | </span><a href='https://twitter.com/GSUI5051 '><span>Twitter</span></a><span> | </span><a href='https://humanbenchmark.com/users/32568254'><span>Human Benchmark</span></a></p><h1><a name="partner-links" class="md-header-anchor"></a><span>Partner Links</span></h1><p><span>WIP</span></p><p><span>Want to be in this area? Contact qq404119235 [at] gmail.com</span></p></div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><p><a href='https://gsui5051.github.io/'><span>English</span></a><span> | </span><a href='https://gsui5051.gitee.io/'><span>中文</span></a></p><h1 id='gsui5051'><span>GSUI5051</span></h1><p><span>I translate incremental games.</span></p><h1 id='translated-games'><span>Translated Games</span></h1><h3 id='antimatter-dimensions'><span>Antimatter Dimensions</span></h3><p><span>Google Play: </span><a href='https://play.google.com/store/apps/details?id=kajfosz.antimatterdimensions&amp;hl=en_US&amp;gl=US' target='_blank' class='url'>https://play.google.com/store/apps/details?id=kajfosz.antimatterdimensions&hl=en_US&gl=US</a></p><p><span>Guide: </span><a href='https://antimatter-dimensions.fandom.com/wiki/Guide' target='_blank' class='url'>https://antimatter-dimensions.fandom.com/wiki/Guide</a></p><h3 id='true-exponential'><span>True Exponential</span></h3><p><span>Link：</span><a href='https://angarg12.github.io/TrueExponential/' target='_blank' class='url'>https://angarg12.github.io/TrueExponential/</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/TrueExponential-zhCN/' target='_blank' class='url'>https://gsui5051.github.io/TrueExponential-zhCN/</a></p><p><span>Chinese Version Link 2：</span><a href='http://likexia.gitee.io/trueexponential/' target='_blank' class='url'>http://likexia.gitee.io/trueexponential/</a></p><h3 id='tower-of-insanity'><span>Tower of Insanity</span></h3><p><span>Link：</span><a href='https://gsui5051.github.io/Tower-of-Insanity-zhCN/index-en.html' target='_blank' class='url'>https://gsui5051.github.io/Tower-of-Insanity-zhCN/index-en.html</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/Tower-of-Insanity-zhCN/index.html' target='_blank' class='url'>https://gsui5051.github.io/Tower-of-Insanity-zhCN/index.html</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/tower-of-insanity-zhcn/' target='_blank' class='url'>https://gsui5051.gitee.io/tower-of-insanity-zhcn/</a></p><h3 id='1g∞u'><span>1G∞U</span></h3><p><span>Link：</span><a href='https://naruyoko.github.io/one-generator--infinite-upgrades/' target='_blank' class='url'>https://naruyoko.github.io/one-generator--infinite-upgrades/</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/one-generator--infinite-upgrades-zhCN/' target='_blank' class='url'>https://gsui5051.github.io/one-generator--infinite-upgrades-zhCN/</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/one-generator--infinite-upgrades-zhcn/' target='_blank' class='url'>https://gsui5051.gitee.io/one-generator--infinite-upgrades-zhcn/</a></p><h3 id='beancremental'><span>Beancremental</span></h3><p><span>Link：</span><a href='https://gsui5051.github.io/Bean-Incremental/index.html' target='_blank' class='url'>https://gsui5051.github.io/Bean-Incremental/index.html</a></p><p><span>Link 2：</span><a href='https://gsui5051.gitee.io/bean-incremental/index.html' target='_blank' class='url'>https://gsui5051.gitee.io/bean-incremental/index.html</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/Bean-Incremental/index-zh.html' target='_blank' class='url'>https://gsui5051.github.io/Bean-Incremental/index-zh.html</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/bean-incremental/index-zh.html' target='_blank' class='url'>https://gsui5051.gitee.io/bean-incremental/index-zh.html</a></p><h3 id='incrementreeverse'><span>Incrementreeverse</span></h3><p><span>Link：</span><a href='http://raw.githack.com/pg132/The-Modding-Tree/master/index.html' target='_blank' class='url'>http://raw.githack.com/pg132/The-Modding-Tree/master/index.html</a></p><p><span>Link 2：</span><a href='https://gsui5051.gitee.io/incrementreeverse/' target='_blank' class='url'>https://gsui5051.gitee.io/incrementreeverse/</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/Incrementreeverse-CN/' target='_blank' class='url'>https://gsui5051.github.io/Incrementreeverse-CN/</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/incrementreeverse-cn' target='_blank' class='url'>https://gsui5051.gitee.io/incrementreeverse-cn</a></p><h3 id='endless-stairwell'><span>Endless Stairwell</span></h3><p><span>Original：</span><a href='https://demonins-item-shop.demonin.repl.co/games/endlessStairwell/' target='_blank' class='url'>https://demonins-item-shop.demonin.repl.co/games/endlessStairwell/</a></p><p><span>Link：</span><a href='https://gsui5051.github.io/Endless-Stairwell/Endless-Stairwell.html' target='_blank' class='url'>https://gsui5051.github.io/Endless-Stairwell/Endless-Stairwell.html</a></p><p><span>Link 2：</span><a href='https://gsui5051.gitee.io/Endless-Stairwell/Endless-Stairwell.html' target='_blank' class='url'>https://gsui5051.gitee.io/Endless-Stairwell/Endless-Stairwell.html</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/Endless-Stairwell/Endless-Stairwell-CN.html' target='_blank' class='url'>https://gsui5051.github.io/Endless-Stairwell/Endless-Stairwell-CN.html</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/Endless-Stairwell/Endless-Stairwell-CN.html' target='_blank' class='url'>https://gsui5051.gitee.io/Endless-Stairwell/Endless-Stairwell-CN.html</a></p><h1 id='other-stuff'><span>Other Stuff</span></h1><h3 id='exponential-idle-star-optimizer'><span>Exponential Idle Star Optimizer</span></h3><p><span>Link：</span><a href='https://gsui5051.github.io/StarOptimizer/' target='_blank' class='url'>https://gsui5051.github.io/StarOptimizer/</a></p><p><span>Link 2：</span><a href='https://gsui5051.gitee.io/StarOptimizer/' target='_blank' class='url'>https://gsui5051.gitee.io/StarOptimizer/</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/StarOptimizer/index2.html' target='_blank' class='url'>https://gsui5051.github.io/StarOptimizer/index2.html</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/StarOptimizer/index2.html' target='_blank' class='url'>https://gsui5051.gitee.io/StarOptimizer/index2.html</a></p><h3 id='exponential-idle-students-optimizer'><span>Exponential Idle Students Optimizer</span></h3><p><span>Link：</span><a href='https://gsui5051.github.io/ei-student-optimizer/' target='_blank' class='url'>https://gsui5051.github.io/ei-student-optimizer/</a></p><p><span>Link 2：</span><a href='https://gsui5051.gitee.io/ei-student-optimizer/' target='_blank' class='url'>https://gsui5051.gitee.io/ei-student-optimizer/</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/ei-student-optimizer/index2.html' target='_blank' class='url'>https://gsui5051.github.io/ei-student-optimizer/index2.html</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/ei-student-optimizer/index2.html' target='_blank' class='url'>https://gsui5051.gitee.io/ei-student-optimizer/index2.html</a></p><h3 id='covid-19-by-nicky-case'><span>COVID-19 by Nicky Case</span></h3><p><span>Link：</span><a href='https://ncase.me/covid-19/' target='_blank' class='url'>https://ncase.me/covid-19/</a></p><p><span>Chinese Version：</span><a href='https://gsui5051.github.io/covid-19/' target='_blank' class='url'>https://gsui5051.github.io/covid-19/</a></p><p><span>Chinese Version Link 2：</span><a href='https://gsui5051.gitee.io/covid-19/' target='_blank' class='url'>https://gsui5051.gitee.io/covid-19/</a></p><h1 id='social-networks'><span>Social Networks</span></h1><p><a href='https://space.bilibili.com/21982610'><span>Bilibili</span></a><span> | </span><a href='https://weibo.com/2549694844/'><span>Weibo</span></a><span> | </span><a href='https://www.zhihu.com/people/gsui5051'><span>Zhihu</span></a><span> | </span><a href='https://steamcommunity.com/profiles/76561198300638655/'><span>Steam</span></a><span> | </span><a href='https://www.youtube.com/channel/UC4cyKyRuRgKfpgyqGNE1MEw'><span>YouTube</span></a><span> | </span><a href='https://twitter.com/GSUI5051'><span>Twitter</span></a><span> | </span><a href='https://humanbenchmark.com/users/32568254'><span>Human Benchmark</span></a></p><h1 id='partner-links'><span>Partner Links</span></h1><p><span>WIP</span></p><p><span>Want to be in this area? Contact qq404119235 [at] gmail.com</span></p></div></div>
 </body>
 </html>
